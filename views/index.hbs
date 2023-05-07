@@ -1,0 +1,14 @@
+
+<div class="p-5 mb-4 bg-light rounded-3">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">Admin Panel</h1>
+    <p class="lead">This portal provides the access to the admin to schedule new meetings as well as manage them.</p>
+    {{#if user}}
+      <h4>Welcome {{ user.displayName }}!</h4>
+      <p class="col-md-8 fs-6">Use the navigation bar at the top of the page to manage meetings.</p>
+    {{else}}
+      <a href="/auth/signin" class="btn btn-primary btn-large">Click here to sign in</a>
+    {{/if}}
+  </div>
+</div>
+
